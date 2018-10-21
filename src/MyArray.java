@@ -11,7 +11,7 @@ public class MyArray <E> implements Simple <E> {
     @Override
     public void myPrintList() {
         for (E s: values) {
-            System.out.println(s);
+            System.out.println(s.toString());
         }
     }
 
@@ -63,3 +63,4 @@ public class MyArray <E> implements Simple <E> {
         return new ArrayIterator<E>(values);
     }
 }
+
