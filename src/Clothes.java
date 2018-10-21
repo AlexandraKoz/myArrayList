@@ -1,14 +1,9 @@
-import java.util.Iterator;
-
 public class Clothes  {
     private String name;
     private String color;
     private int size;
     private int price;
 
-    private Clothes [] values;
-
-    public Clothes(){}
 
     public Clothes(String name, String color, int size, int price){
         this.name = name;
@@ -58,57 +53,4 @@ public class Clothes  {
                 ", price=" + getPrice() +
                 '}';
     }
-
-    //    @Override
-//    public boolean myAdd(Clothes clothes) {
-//        try {
-//            Clothes[] temp = values;
-//            values = (Clothes []) new Object[temp.length + 1];
-//            System.arraycopy(temp,0,values,0,temp.length);
-//            values[values.length - 1] = clothes;
-//            return true;
-//        } catch (ClassCastException ex){
-//            ex.printStackTrace();
-//        }
-//        return false;
-//    }
-//
-//    @Override
-//    public void myDelete(int index) {
-//        try {
-//            Clothes[] temp = values;
-//            values = (Clothes[]) new Object[temp.length - 1];
-//            System.arraycopy(temp,0,values,0,index);
-//            System.arraycopy(temp,index+1,values,index,temp.length-index-1);
-//        } catch (ClassCastException ex){
-//            ex.printStackTrace();
-//        }
-//    }
-//
-//    @Override
-//    public Clothes myGet(int index) {
-//        return values[index];
-//    }
-//
-//    @Override
-//    public int mySize() {
-//        return values.length;
-//    }
-//
-//    @Override
-//    public void myUpdate(int index, Clothes clothes) {
-//        values[index] = clothes;
-//    }
-//
-//    @Override
-//    public void myPrintList() {
-//        for (Clothes cl: values) {
-//            System.out.println(cl);
-//        }
-//    }
-//
-//    @Override
-//    public Iterator<Clothes> iterator() {
-//        return new ArrayIterator<>(values);
-//    }
 }
